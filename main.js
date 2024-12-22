@@ -10,8 +10,7 @@ function login(){
         id: id.value,
         psword: psword.value,
     };
-    console.log(JSON.stringify(req))
-    fetch("https://fastapi-ex-b.onrender.com/auth/login/",{
+    fetch("http://rable.duckdns.org/auth/login/",{
         method: "POST",
         headers:{
             "Content-Type": "application/json",
